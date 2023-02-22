@@ -8,5 +8,17 @@
 </head>
 <body>
     <h1>Hello, World :) </h1>
+    <br>
+    <button id = "btn"> Click Me </button>
+
+    <script> 
+        var btn = document.getElementById("btn");
+        
+        function once(){
+            btn.textContent = "You have clicked me"            
+        }
+
+        btn.addEventListener("click", once);
+    </script>
 </body>
 </html>
