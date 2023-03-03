@@ -1,5 +1,6 @@
-@media(min-width: 768) {
+@media(min-width: 768px) {
     .newsletter{
         width: 50%;
+        
     }
 }
