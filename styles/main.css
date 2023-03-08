@@ -1,0 +1,112 @@
+@media(min-width: 768px) {
+    .newsletter{
+        width: 50%;
+        
+    }
+}
+
+/* HOME PAGE */
+.calendar-date{
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    display:grid;
+    align-self: center;
+    text-align: center;
+     
+}
+.calendar-date p {
+    display: table-cell;
+    text-justify: center;
+    vertical-align: middle;
+    font-size:5rem;   
+}
+/* EVENTS PAGE */
+/* Carousel Customisations */
+
+.carousel-item img{
+    opacity: .8;
+}
+
+.carousel-caption{
+    position: absolute;
+    right: 15%;
+    top: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: right;
+}
+.carousel-caption h1{
+    font-size: 6rem;
+}
+
+/* Event Card */
+
+.event-container{
+    margin-top: 20px;
+    
+    justify-content:center;
+}
+.event-card{
+    border: solid 1mm #32a1ce;
+    border-radius: 3px;;
+}
+
+.event-calendar{
+    
+    padding:0;
+}
+
+.event-date{
+    line-height: 80%;
+    text-align: center;
+    text-justify: center;
+    align-items: center;   
+    font-size: 5rem;
+   
+    
+
+
+}
+.event-month{
+    font-size: 4rem;
+    text-align: center;
+    text-justify: center;
+    align-items: center;
+}
+
+
+.event-description{
+     padding: 20px 0;
+     display: table-cell;
+     
+}
+
+.event-details{
+    padding: 20px 0;
+}
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+/* NAVBAR 
+.navbar{
+    background-color: #fcf1c0;
+    height: 10vh;
+    
+}
+.navbar a{
+    color:#c0b9bf;
+    font-size: 2rem;
+font-weight: 30
+}
+
+
