@@ -1,0 +1,87 @@
+
+main{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+
+}
+
+.container{
+  
+    max-width: 900px;
+    width: 90%;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 5px;;
+
+}
+
+ .input-details{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-box{
+    width:  calc(100%);
+    margin: 5px 0 10px;
+}
+
+.input-box input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 12px;
+}
+
+.input-box input::placeholder{
+    font-size:.8em ;
+}
+
+
+.details{
+    font-weight: 600; 
+    display: block;
+    margin-bottom: 5px;
+    /* change font formatting */
+}
+
+input:focus, input:valid{
+    border-color: #9b59b6;
+}
+
+.genre-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.checkbox{
+    padding: 5px;
+    margin-left: 0px 0px 30px 10px;
+}
+
+.genre{
+    margin-left: 10px;
+}
+
+form .button{
+    height: 50px;
+    margin: 35px 0;
+}
+form .button input {
+    height: 100%;
+    width: 100%;
+    color: white;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+}

@@ -21,6 +21,9 @@
     vertical-align: middle;
     font-size:5rem;   
 }
+
+
+
 /* EVENTS PAGE */
 /* Carousel Customisations */
 
@@ -92,21 +95,4 @@
 li{
     list-style: none;
 }
-
-
-
-
-
-/* NAVBAR 
-.navbar{
-    background-color: #fcf1c0;
-    height: 10vh;
-    
-}
-.navbar a{
-    color:#c0b9bf;
-    font-size: 2rem;
-font-weight: 30
-}
-
 
