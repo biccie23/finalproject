@@ -1,12 +1,96 @@
-@media(min-width: 768px) {
-    .newsletter{
-        width: 50%;
-        
-    }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
+/* NAVBAR STYLING AND LAYOUT */
+
+.navbar ul{
+    height: 100px;;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #FFEEE7;
+    color: #FF6B6B;
+    
+}
+
+.navbar li{
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+.navbar a{
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+
+.nav-logo{
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: 'Fuzzy Bubbles';
+    font-weight: 1000;
+   
+}
+.nav-toggle{
+    display: none;
+
+}
+
+.nav-link{
+    font-family: 'Raleway';
+}
+
+.nav-link a:hover{
+    background-color: #FF6B6B;
+    text-decoration: underline;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color:#FFEEE7;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .navbar ul{
+        background-color: red;
+        flex-wrap: wrap;
+
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .active{
+        display: block;
+
+    }
+    
+}
+
+
+
+
+
+
+/* 
+
 /* HOME PAGE */
-.calendar-date{
+/* .calendar-date{
     width: 100%;
     height: 100%;
     background-color: aquamarine;
@@ -27,7 +111,7 @@
 /* EVENTS PAGE */
 /* Carousel Customisations */
 
-.carousel-item img{
+/* .carousel-item img{
     opacity: .8;
 }
 
@@ -44,11 +128,11 @@
 }
 .carousel-caption h1{
     font-size: 6rem;
-}
+} */
 
 /* Event Card */
 
-.event-container{
+/* .event-container{
     margin-top: 20px;
     
     justify-content:center;
@@ -90,9 +174,4 @@
 
 .event-details{
     padding: 20px 0;
-}
-
-li{
-    list-style: none;
-}
-
+} */

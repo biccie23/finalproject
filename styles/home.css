@@ -1,0 +1,21 @@
+.intro-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    background-color: #FF6B6B;
+    padding: 50px;
+    color:#FFEEE7;
+    
+    
+}
+
+
+
+
+.intro-button{
+    background-color: #FFEEE7;
+    border: none;
+    
+}
