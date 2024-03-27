@@ -1,0 +1,26 @@
+*{
+    color: #1C304A;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFEEE7;
+    color: #1C304A;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.btn-link{
+
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+
+
+

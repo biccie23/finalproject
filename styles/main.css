@@ -1,98 +1,191 @@
-@media(min-width: 768px) {
-    .newsletter{
-        width: 50%;
-        
-    }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+
+
+:root{
+    --brand-color-primary: #FF1717;
+    --brand-color-pale: #FFE3E6;
+    --brand-color-text: #454659;
 }
 
-/* HOME PAGE */
-.calendar-date{
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* NAVBAR STYLING AND LAYOUT */
+
+.navbar{
+   
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: aquamarine;
-    display:grid;
-    align-self: center;
-    text-align: center;
+    transition: top 0.3s;
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.navnar.show-nav{
+    background-color: blue;
+
+}
+
+
+.navbar ul{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: var(--brand-color-pale);
+    color: var(--brand-color-primary);
+    
+}
+
+.navbar li{
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+.navbar a{
+    color: var(--brand-color-primary);
+    text-decoration: none;
+}
+
+
+.nav-logo{
+    flex: 1;
+    font-size: 1.5rem;
+    font-family: 'Fuzzy Bubbles';
+    font-weight: 1000;
+   
+}
+.nav-toggle{
+    display: none;
+
+}
+
+.nav-link{
+    font-family: 'Raleway';
+}
+
+.nav-link:hover{
+    background-color: var(--brand-color-primary);
+    border-radius: 2px;
+
+}
+.nav-link:hover a{
+    padding: 5px 15px;
+    color:var(--brand-color-pale);
+ 
+}
+
+@media (max-width: 600px) {
+    .navbar ul{
+        
+        flex-wrap: wrap;
+
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+        width: 100%;
+        text-align: center;
+
+    }
+    .nav-active{
+        display: block;
+        background-color: white;
      
-}
-.calendar-date p {
-    display: table-cell;
-    text-justify: center;
-    vertical-align: middle;
-    font-size:5rem;   
-}
-
-
-
-/* EVENTS PAGE */
-/* Carousel Customisations */
-
-.carousel-item img{
-    opacity: .8;
-}
-
-.carousel-caption{
-    position: absolute;
-    right: 15%;
-    top: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: right;
-}
-.carousel-caption h1{
-    font-size: 6rem;
-}
-
-/* Event Card */
-
-.event-container{
-    margin-top: 20px;
+    }
     
-    justify-content:center;
-}
-.event-card{
-    border: solid 1mm #32a1ce;
-    border-radius: 3px;;
 }
 
-.event-calendar{
-    
-    padding:0;
-}
 
-.event-date{
-    line-height: 80%;
+
+
+/*  FOOTER STYLING AND LAYOUT */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    background-color:var(--brand-color-pale);
+    padding: 0 50px;
+    margin-top: 50px;
     text-align: center;
-    text-justify: center;
-    align-items: center;   
-    font-size: 5rem;
+    font-family: 'Raleway';
+
+}
+
+.footer-div{
+    flex: 1 1 33.33%;
+    margin: 0px;
+    padding: 30px;
+    
    
     
-
+    
 
 }
-.event-month{
-    font-size: 4rem;
-    text-align: center;
-    text-justify: center;
-    align-items: center;
+
+.footer-div h3{
+    color: var(--brand-color-primary);
+    margin-bottom: 15px;
+    
+}
+
+.footer-div p{
+    color: var(--brand-color-text);
+    margin-bottom: 25px;
+    font-size: .8rem;
+    
+}
+
+.footer-div a{
+    font-size: .8rem;
+    color: var(--brand-color-text);
+}
+
+.footer-div a:hover{
+    font-size: .9rem;
+    color: var(--brand-color-primary);
 }
 
 
-.event-description{
-     padding: 20px 0;
-     display: table-cell;
-     
+
+
+.footer-copyright{
+    width: 100%;
+    padding: 10px 0px;
+    font-size: .8rem;
+    color: var(--brand-color-primary);
 }
 
-.event-details{
-    padding: 20px 0;
+
+
+@media screen and (max-width: 768px) {
+    .footer-div {
+      flex-basis: 100%; /* Each footer div takes up full width on smaller screens */
+    }
+  }
+
+
+/* 
+  .fd1{
+    background-color: #cc515d;
 }
 
-li{
-    list-style: none;
+.fd2{
+    background-color: rgb(198, 198, 245);
 }
 
+.fd3{
+    background-color: #cc515d;
+} */

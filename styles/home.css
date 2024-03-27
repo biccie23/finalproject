@@ -1,0 +1,157 @@
+.intro-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Raleway';
+    text-align: center;
+    /* margin-top: 100px; */
+}
+
+.intro{
+    flex: 1;
+    width: 100%;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 50px;
+    background-color: var(--brand-color-primary);
+    color:var(--brand-color-pale);
+    margin-bottom: 50px;
+}
+
+
+.description{
+    background-color: var(--brand-color-pale);
+    border: none;
+    width: 70%;
+    margin: auto;
+    padding: 20px 50px;
+    color: var(--brand-color-primary);
+    font-size: 1rem;
+    line-height: 2;
+    
+}
+
+.intro-active{
+    order:1;
+    background-color: red;
+}
+
+
+/* MEET THE GIRLIES SECTION */
+
+
+.girlies-container {
+    width: 100%;
+    text-align: center; /* Center the content horizontally */
+    font-family: 'Raleway', sans-serif; /* Set font family for the container */
+    color:var(--brand-color-primary);
+  }
+  
+  .girlies-heading {
+    width: 100%;
+    color:var(--brand-color-primary);
+    padding: 50px;
+    font-size: 2rem;
+  }
+  
+  .girlies-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+  }
+
+  .girlies-card {
+    min-width: 300px;
+    min-height: 300px;
+    width: calc(25% - 20px); /* Adjust width for each card */
+    border-radius: 50%;
+    margin: 10px;
+    padding: 80px;
+    text-align: center;
+    border: 12px solid var(--brand-color-pale);
+    float: left; /* Float the cards to align them horizontally */
+    overflow: hidden; 
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+  
+  }
+  
+  .girlies-card img {
+    width: 100%; /* Make sure the image takes full width of the card */
+    max-width: 100%;
+    border-radius: 50%; /* Keep the image as a circle */
+  }
+  
+  .girlies-card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+  }
+  
+  .girlies-card p {
+    font-size: 14px;
+    color: var(--brand-color-text);
+  }
+
+  /* Larger Screen */
+ 
+  @media screen and (min-width: 1145px) {
+    .girlies-card {
+      width: calc(40% - 20px); /* Adjust card width for larger screens */
+    
+    }
+
+    .intro{
+        padding: 100px 200px;
+
+    }
+
+    
+    .description{
+        padding: 50px;
+
+
+    }
+    
+  }
+
+/* Medium size screen */
+  @media screen and (min-width: 1024px) {
+    .girlies-card {
+      width: calc(40% - 20px); /* Adjust card width for larger screens */
+    
+    }
+    .intro{
+        padding: 50px 150px;
+
+    }
+    
+
+  }
+
+
+  /* Smaller/mobile screen */
+
+
+  @media screen and (max-width: 600px) {
+    .girlies-card {
+      width: calc(40% - 20px); /* Adjust card width for larger screens */
+    
+    }
+
+    .intro{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .description{
+        width: 85%;
+    }
+
+  }
+
