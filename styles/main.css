@@ -29,10 +29,7 @@
     z-index: 1000; /* Ensure navbar is above other content */
 }
 
-.navnar.show-nav{
-    background-color: blue;
 
-}
 
 
 .navbar ul{
@@ -107,6 +104,16 @@
     
 }
 
+
+/* For when Navbar is toggled to show when scrolling up */
+.navbar.show{ 
+    top: 0;
+    position: fixed;
+
+}
+.intro-container{
+    margin-top: 100px;
+}
 
 
 
