@@ -2,20 +2,43 @@
 main{
     display: flex;
     height: 100vh;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+    margin: 0;
+    /* background: linear-gradient(135deg, var(--brand-color-pale), var(--brand-color-primary)); */
+    /* background-color: var(--brand-color-primary); */
+    background-color: #454659;
 
 }
 
-.container{
+#backbutton{
+    color: var(--brand-color-text);
+    background-color: var(--brand-color-pale);
+    border-radius: 5px;
+    padding: 0px 5px 2px 5px;
+    flex: 1;
+    font-weight: bold;
+    max-height: 25px;
+    align-self: start;
+    margin-left: 40px;
+    border: none;
+
+}
+
+.join-container{
   
     max-width: 900px;
     width: 90%;
     padding: 25px 30px;
-    background: white;
-    border-radius: 5px;;
+    background-color: var(--brand-color-pale);
+    border-radius: 5px;
+    color: var(--brand-color-text);
 
+}
+
+.title h3{
+    color: var(--brand-color-primary);
 }
 
  .input-details{
@@ -28,6 +51,7 @@ main{
 .input-box{
     width:  calc(100%);
     margin: 5px 0 10px;
+    color: var(--brand-color-primary);
 }
 
 .input-box input{
@@ -52,15 +76,21 @@ main{
 }
 
 input:focus, input:valid{
-    border-color: #9b59b6;
+    border-color: var(--brand-color-primary);
+    color: var(--brand-color-text);
 }
 
-.genre-details{
+.interest-details{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    
 
+}
+
+.interest-details h5{
+    color: var(--brand-color-primary);
 }
 
 .checkbox{
@@ -68,7 +98,7 @@ input:focus, input:valid{
     margin-left: 0px 0px 30px 10px;
 }
 
-.genre{
+.interest{
     margin-left: 10px;
 }
 
@@ -83,5 +113,15 @@ form .button input {
     border: none;
     font-weight: 500;
     border-radius: 5px;
-    background: linear-gradient(135deg,#71b7e6, #9b59b6);
+    background: var(--brand-color-primary);
+    color: var(--brand-color-pale);
 }
+
+form .button:hover{
+    color: var(--brand-color-primary);
+}
+
+
+
+/* Submit confirmaiton box styling */
+

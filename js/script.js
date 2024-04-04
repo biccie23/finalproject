@@ -12,6 +12,7 @@ window.addEventListener("scroll", function() {
   } else if (currentScroll < lastScrollTop && !isNavbarVisible) {
     // Upscroll code
     document.querySelector(".navbar").classList.add("show");
+    document.querySelector(".intro-container").classList.add("lower");
     isNavbarVisible = true;
     
   }

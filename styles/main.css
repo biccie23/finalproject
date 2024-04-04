@@ -39,12 +39,14 @@
     align-items: center;
     background-color: var(--brand-color-pale);
     color: var(--brand-color-primary);
+    margin: 0;
     
 }
 
 .navbar li{
     list-style: none;
     padding: 1rem;
+    
     
 }
 
