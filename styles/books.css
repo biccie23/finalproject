@@ -1,9 +1,11 @@
 main{
     min-height: 100vh;
-    background-color: azure;
+    margin: 0;
+    
 }
 
 .book-gallery-container{
+  
     
     position: relative;
     width: 100%;
@@ -17,28 +19,69 @@ main{
 } */
 
 .books-description{
-  
-    padding: 30px;
+    
+    padding: 100px;
     text-align: center;
+    font-family: 'Fuzzy Bubbles';
+    margin-top: 100px;
+    text-align: left;
+    
 }
 
-.book-gallery-container  button.active{
-    background-color: aqua;
+.books-description h1{
+    color: var(--brand-color-primary);
+    font-weight: bolder;
+    margin-bottom: 20px;
 }
+
+#next{
+    background-color: var(--brand-color-primary);
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    color: var(--brand-color-pale);
+    font-family: 'Raleway';
+    outline: none;
+
+}
+
+
+
+.book-gallery-container  button.active{
+    background-color: var(--brand-color-primary) !important;
+    color: var(--brand-color-pale) !important;
+    border: none !important;
+    
+}
+
+.book-gallery-container  button:focus{
+   outline: none;
+    
+}
+
+
+
+
+
 
 #filter-buttons{
     display:flex;
     align-items: center;
     gap: 25px;
     flex-wrap: wrap;
-
     justify-content: center;
     
 }
 
 #filter-buttons button{
     width: 30%;
+    max-width: 140px;
     height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    color: var(--brand-color-primary);
+    font-weight: 600;
+    border: 3px solid var(--brand-color-pale2);
 }
 
 
@@ -47,7 +90,7 @@ main{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: azure;
+    
     justify-content: space-evenly;
 }
 
@@ -73,7 +116,7 @@ main{
 }
 
 .month  {
-    background-color: rgb(232, 206, 206);
+    background-color: var(--brand-color-pale2);
     margin: 10px 0px;
     padding: 8px;
     border-radius: 5px;

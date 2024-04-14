@@ -6,7 +6,7 @@
     width: 100%;
     font-family: 'Raleway';
     text-align: center;
-    /* margin-top: 100px; */
+    
 }
 
 .intro{
@@ -71,7 +71,7 @@
     margin: 10px;
     padding: 80px;
     text-align: center;
-    border: 12px solid var(--brand-color-pale);
+    border: 10px solid var(--brand-color-pale2);
     float: left; /* Float the cards to align them horizontally */
     overflow: hidden; 
     aspect-ratio: 1 / 1;

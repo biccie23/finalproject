@@ -4,8 +4,9 @@
 
 
 :root{
-    --brand-color-primary: #FF1717;
+    --brand-color-primary: #F43536;
     --brand-color-pale: #FFE3E6;
+    --brand-color-pale2: #ffd2ee;
     --brand-color-text: #454659;
 }
 
@@ -19,6 +20,10 @@
 }
 
 /* NAVBAR STYLING AND LAYOUT */
+
+nav{
+    background-color: var(--brand-color-pale);
+}
 
 .navbar{
    
@@ -117,6 +122,9 @@
     margin-top: 100px;
 }
 
+/* .intro-container.lower{
+    margin-top: 0px;
+} */
 
 
 /*  FOOTER STYLING AND LAYOUT */
